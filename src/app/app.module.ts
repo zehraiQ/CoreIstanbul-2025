@@ -10,6 +10,10 @@ import { FormsModule } from '@angular/forms';
 import { SquarePipe } from './pipes/square.pipe';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { ClassBindingComponent } from './class-binding/class-binding.component';
+import { InterpolationComponent } from './interpolation/interpolation.component';
+import { PropertyBindingComponent } from './property-binding/property-binding.component';
+import { StyleBindingComponent } from './style-binding/style-binding.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { ChildComponent } from './child/child.component';
     FooterComponent,
     SquarePipe,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    ClassBindingComponent,
+    InterpolationComponent,
+    PropertyBindingComponent,
+    StyleBindingComponent
   ],
   imports: [
     BrowserModule,
