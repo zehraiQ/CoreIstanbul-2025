@@ -14,6 +14,10 @@ import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
+import { EventBindingComponent } from './event-binding/event-binding.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { TemplateReferenceVariableComponent } from './template-reference-variable/template-reference-variable.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,11 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
     ClassBindingComponent,
     InterpolationComponent,
     PropertyBindingComponent,
-    StyleBindingComponent
+    StyleBindingComponent,
+    EventBindingComponent,
+    PipesComponent,
+    TemplateReferenceVariableComponent,
+    TwoWayBindingComponent
   ],
   imports: [
     BrowserModule,
