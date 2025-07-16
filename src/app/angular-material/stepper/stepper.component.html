@@ -1,0 +1,19 @@
+<mat-vertical-stepper linear>
+    <mat-step label="Shipping Address" [completed]="step1Completed">
+        <p>Content for Step 1</p>
+        <button mat-raised-button color="warn" (click)="step1Completed = true">Submit</button>
+        <button mat-raised-button color="primary" matStepperNext>Next</button>
+    </mat-step>
+    <mat-step label="Billing Address" [completed]="step2Completed">
+        <p>Content for Step 2</p>
+        <button mat-raised-button color="warn" (click)="step2Completed = true">Submit</button>
+        <button mat-raised-button color="warn" matStepperPrevious>Previous</button>
+        <button mat-raised-button color="primary" matStepperNext>Next</button>
+    </mat-step>
+    <mat-step label="Payment" [completed]="step3Completed">
+        <p>Content for Step 3</p>
+        <button mat-raised-button color="warn" (click)="step3Completed = true">Submit</button>
+        <button mat-raised-button color="warn" matStepperPrevious>Previous</button>
+        
+    </mat-step>
+</mat-vertical-stepper>

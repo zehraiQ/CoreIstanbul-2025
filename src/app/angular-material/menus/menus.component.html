@@ -1,0 +1,10 @@
+<mat-menu #menu="matMenu" xPosition="after" yPosition="above">
+    <span mat-menu-item>
+        <button mat-icon-button><mat-icon>add</mat-icon> Add</button> 
+    </span>
+    <span mat-menu-item>
+        <button mat-icon-button><mat-icon>edit</mat-icon> Edit</button> 
+    </span>
+</mat-menu>
+
+<button class="menu-button" mat-icon-button [matMenuTriggerFor]="menu"><mat-icon>home</mat-icon></button>

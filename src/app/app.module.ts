@@ -18,6 +18,18 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { TemplateReferenceVariableComponent } from './template-reference-variable/template-reference-variable.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { TypographyComponent } from './angular-material/typography/typography.component';
+import { ButtonsComponent } from './angular-material/buttons/buttons.component';
+import { SharedModule } from './shared/shared.module';
+import { ButtonTogglesComponent } from './angular-material/button-toggles/button-toggles.component';
+import { IconsComponent } from './angular-material/icons/icons.component';
+import { BadgesComponent } from './angular-material/badges/badges.component';
+import { MenusComponent } from './angular-material/menus/menus.component';
+import { PanelsComponent } from './angular-material/panels/panels.component';
+import { TabsComponent } from './angular-material/tabs/tabs.component';
+import { StepperComponent } from './angular-material/stepper/stepper.component';
+import { InputsComponent } from './form/inputs/inputs.component';
+import { DialogsComponent } from './angular-material/dialogs/dialogs.component';
 
 @NgModule({
   declarations: [
@@ -35,12 +47,24 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
     EventBindingComponent,
     PipesComponent,
     TemplateReferenceVariableComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    TypographyComponent,
+    ButtonsComponent,
+    ButtonTogglesComponent,
+    IconsComponent,
+    BadgesComponent,
+    MenusComponent,
+    PanelsComponent,
+    TabsComponent,
+    StepperComponent,
+    InputsComponent,
+    DialogsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule, 
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

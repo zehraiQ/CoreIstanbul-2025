@@ -1,0 +1,17 @@
+<mat-tab-group [(selectedIndex)]="selectedIndex" (selectedTabChange)="showTab($event.index)">
+    <mat-tab label="First">
+        <p>Content for the first tab.</p>
+        <p>More content can be added here.</p>
+    </mat-tab>
+    <mat-tab label="Second">
+        <p>Content for the second tab.</p>
+        <p>Additional information can be placed here.</p>
+    </mat-tab>
+    <mat-tab label="Fourth">
+        <p>Content for the fourth tab.</p>
+        <p>Further details can be included here.</p>
+    </mat-tab>
+</mat-tab-group>
+<button mat-raised-button (click)="selectedIndex = (selectedIndex ?? 0) - 1">Prev Tab</button>
+
+<button mat-raised-button (click)="selectedIndex = (selectedIndex ?? 0) + 1">Next Tab</button>
