@@ -19,11 +19,14 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDialogModule } from '@angular/material/dialog';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RxReactiveFormsModule } from '@rxweb/reactive-form-validators';
 
 
 
 const angualrMaterial = [
   // Add Angular Material modules here
+  ReactiveFormsModule,
   MatButtonModule,
   MatIconModule,
   MatButtonToggleModule,
@@ -43,6 +46,7 @@ const angualrMaterial = [
   MatTooltipModule,
   MatSnackBarModule,
   MatDialogModule,
+  RxReactiveFormsModule, 
 ];
 
 @NgModule({

@@ -1,7 +1,7 @@
 import { platformBrowser } from '@angular/platform-browser';
-import { AppModule } from './app/app.module';
+import { AuthModule } from './app/auth/auth.module';
 
-platformBrowser().bootstrapModule(AppModule, {
+platformBrowser().bootstrapModule(AuthModule, {
   ngZoneEventCoalescing: true,
 })
   .catch(err => console.error(err));
