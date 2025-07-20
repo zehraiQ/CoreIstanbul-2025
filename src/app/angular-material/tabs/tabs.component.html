@@ -12,6 +12,6 @@
         <p>Further details can be included here.</p>
     </mat-tab>
 </mat-tab-group>
-<button mat-raised-button (click)="selectedIndex = (selectedIndex ?? 0) - 1">Prev Tab</button>
+<button mat-raised-button (click)="selectedIndex = selectedIndex - 1">Prev Tab</button>
 
-<button mat-raised-button (click)="selectedIndex = (selectedIndex ?? 0) + 1">Next Tab</button>
+<button mat-raised-button (click)="selectedIndex = selectedIndex + 1">Next Tab</button>
