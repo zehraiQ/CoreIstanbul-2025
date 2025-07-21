@@ -30,6 +30,8 @@ import { TabsComponent } from './angular-material/tabs/tabs.component';
 import { StepperComponent } from './angular-material/stepper/stepper.component';
 import { InputsComponent } from './form/inputs/inputs.component';
 import { DialogsComponent } from './angular-material/dialogs/dialogs.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BootstrapComponent } from './bootstrap/bootstrap.component';
 
 @NgModule({
   declarations: [
@@ -58,13 +60,14 @@ import { DialogsComponent } from './angular-material/dialogs/dialogs.component';
     TabsComponent,
     StepperComponent,
     InputsComponent,
-    DialogsComponent
+    DialogsComponent,
+    BootstrapComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule, 
-    SharedModule
+    SharedModule, NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,3 +2,19 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+.bg-salman{
+    background-color: purple !important;
+}
+
+.text-salman{
+    color: purple !important;
+}
+
+.text-bg-salman{
+    background-color: purple !important;
+    color: white !important;
+}
