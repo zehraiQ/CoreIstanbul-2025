@@ -1,22 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RegisterationComponent } from './registeration/registeration.component';
-import { BrowserModule } from '@angular/platform-browser';
 import { SharedModule } from '../shared/shared.module';
-import { AppRoutingModule } from "../app-routing.module";
 import { RXRegisterationComponent } from './rx-registeration/rx-registeration.component';
+import { AuthRoutingModule } from './auth-routing.module';
+import { AuthComponent } from './auth.component';
+import { CommonModule } from '@angular/common';
 
 
 
 @NgModule({
   declarations: [
+    AuthComponent,
     RegisterationComponent,
-    RXRegisterationComponent
+    RXRegisterationComponent,
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
     SharedModule,
-    AppRoutingModule,
+    AuthRoutingModule,
 ],
-  bootstrap: [RXRegisterationComponent],
 })
 export class AuthModule { }

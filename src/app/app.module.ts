@@ -32,6 +32,10 @@ import { InputsComponent } from './form/inputs/inputs.component';
 import { DialogsComponent } from './angular-material/dialogs/dialogs.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BootstrapComponent } from './bootstrap/bootstrap.component';
+import { EmployeeListComponent } from './employee/components/employee-list/employee-list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { EmployeeDetailsComponent } from './employee/components/employee-details/employee-details.component';
 
 @NgModule({
   declarations: [
@@ -61,13 +65,18 @@ import { BootstrapComponent } from './bootstrap/bootstrap.component';
     StepperComponent,
     InputsComponent,
     DialogsComponent,
-    BootstrapComponent
+    BootstrapComponent,
+    EmployeeListComponent,
+    NotFoundComponent,
+    EmployeeDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule, 
-    SharedModule, NgbModule
+    SharedModule, 
+    NgbModule,
+    HttpClientModule // Ensure HttpClientModule is imported for HTTP requests
   ],
   providers: [],
   bootstrap: [AppComponent]

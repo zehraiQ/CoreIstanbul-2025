@@ -1,0 +1,10 @@
+<h2>Employee Details</h2>
+<div *ngIf="employeeDetails">
+  <p>ID: {{ employeeDetails.id }}</p>
+  <p>Name: {{ employeeDetails.fullName }}</p>
+  <p>Position: {{ employeeDetails.position }}</p>
+  <p>Department: {{ employeeDetails.department }}</p>
+</div>
+
+<button (click)="navigateToList()">Back to List</button>
+<button (click)="navigateToNext()">Next</button>

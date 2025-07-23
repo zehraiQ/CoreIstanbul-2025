@@ -1,0 +1,28 @@
+<div class="container">
+    <h2>Employee List</h2>
+    @if(hasError){
+        <div class="alert alert-danger">
+            <strong>Error!</strong> Unable to load employee data. {{ errorMessage }}
+        </div>
+    }
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Position</th>
+                <th>Department</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employeeList" [class.table-dark]=" employee.id === lastVisitedId">
+                <td>{{ employee.id }}</td>
+                <td><span class="pointer" (click)="navigateToDetails(employee.id)">{{ employee.fullName }}</span></td>
+                <td>{{ employee.position }}</td>
+                <td>{{ employee.department }}</td>
+                <td>{{ employee.salary | currency }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
