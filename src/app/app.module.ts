@@ -36,6 +36,7 @@ import { EmployeeListComponent } from './employee/components/employee-list/emplo
 import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { EmployeeDetailsComponent } from './employee/components/employee-details/employee-details.component';
+import { BaseComponent } from './base.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { EmployeeDetailsComponent } from './employee/components/employee-details
     BootstrapComponent,
     EmployeeListComponent,
     NotFoundComponent,
-    EmployeeDetailsComponent
+    EmployeeDetailsComponent,
+    BaseComponent
   ],
   imports: [
     BrowserModule,

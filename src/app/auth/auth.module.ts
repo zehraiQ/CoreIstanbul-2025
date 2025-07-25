@@ -5,6 +5,7 @@ import { RXRegisterationComponent } from './rx-registeration/rx-registeration.co
 import { AuthRoutingModule } from './auth-routing.module';
 import { AuthComponent } from './auth.component';
 import { CommonModule } from '@angular/common';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -13,6 +14,7 @@ import { CommonModule } from '@angular/common';
     AuthComponent,
     RegisterationComponent,
     RXRegisterationComponent,
+    LoginComponent,
   ],
   imports: [
     CommonModule,

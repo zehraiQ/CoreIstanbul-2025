@@ -14,6 +14,7 @@ const routes: Routes = [
   {path: 'class-binding', component: ClassBindingComponent},
   {path: 'event-binding', component: EventBindingComponent},
   { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) },
+  { path: 'angular-material', loadChildren: () => import('./angular-material/angular-material.module').then(m => m.AngularMaterialModule) },
   {path: '**', component: NotFoundComponent},
 ];
 

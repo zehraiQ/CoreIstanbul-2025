@@ -1,8 +1,14 @@
 <mat-toolbar class="bg-primary">
-  <span class="mat-title">Core Istanbul</span>
-  <a routerLink="/employee-list">Employee</a>
-  <a routerLink="/class-binding">Class Binding</a>
-  <a routerLink="/event-binding">Event Binding</a>
-  <a routerLink="/auth/register">Register</a>
-  <a routerLink="/auth/registeration">Registeration</a>
+  <span class="mat-title">{{label.CoreIstanbul}}</span>
+  <a routerLink="/employee-list">{{label.EmployeeList}}</a>
+  <a routerLink="/class-binding">{{label.ClassBinding}}</a>
+  <a routerLink="/event-binding">{{label.EventBinding}}</a>
+  <a routerLink="/auth/register">{{label.Register}}</a>
+  <a routerLink="/auth/registeration">{{label.Registeration}}</a>
+  <a routerLink="/auth/login">{{label.Login}}</a>
+  <a routerLink="/auth/logout">Logout</a>
+
+  <span class="ps-5">
+    {{userContext.name || 'Guest'}}
+  </span>
 </mat-toolbar>

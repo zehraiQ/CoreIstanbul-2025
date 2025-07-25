@@ -1,4 +1,4 @@
-import { compare, email, maxLength, minLength, prop, required } from "@rxweb/reactive-form-validators";
+import { compare, contains, email, maxLength, minLength, prop, required } from "@rxweb/reactive-form-validators";
 
 export class UserModel{
     @required({ message: 'Username is required' })

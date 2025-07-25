@@ -1,0 +1,39 @@
+<div class="container">
+    <h2>Login</h2>
+    @if(hasError){
+        <div class="alert alert-danger">
+            {{ errorMessage }}
+        </div>
+    }
+
+    @if(isLoggingIn){
+        <div class="alert alert-success">
+            {{ loggedInMessage }} {{ userContext.name }}
+        </div>
+    }
+    
+    @if(userHasRoles('delete')){
+        <div class="alert alert-info">
+            You are logged in as an admin.
+        </div>
+    }
+
+  <form [formGroup]="loginForm" (submit)="login()">
+    <mat-form-field class="w-100" appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email">
+        @if(loginForm.controls.email.errors?.['required']){
+            <mat-error>{{loginForm.controls.email.errors?.['required']?.message}}</mat-error>
+        }   
+        <mat-error>{{loginForm.controls.email.errors?.['email']?.message}}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="w-100 mt-3" appearance="outline">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" formControlName="password">
+      <mat-error>{{loginForm.controls.password.errors?.['required']?.message}}</mat-error>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">Login</button>
+  </form>
+</div>
