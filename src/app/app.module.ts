@@ -18,16 +18,9 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { TemplateReferenceVariableComponent } from './template-reference-variable/template-reference-variable.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
-import { TypographyComponent } from './angular-material/typography/typography.component';
-import { ButtonsComponent } from './angular-material/buttons/buttons.component';
+
 import { SharedModule } from './shared/shared.module';
-import { ButtonTogglesComponent } from './angular-material/button-toggles/button-toggles.component';
-import { IconsComponent } from './angular-material/icons/icons.component';
-import { BadgesComponent } from './angular-material/badges/badges.component';
-import { MenusComponent } from './angular-material/menus/menus.component';
-import { PanelsComponent } from './angular-material/panels/panels.component';
-import { TabsComponent } from './angular-material/tabs/tabs.component';
-import { StepperComponent } from './angular-material/stepper/stepper.component';
+
 import { InputsComponent } from './form/inputs/inputs.component';
 import { DialogsComponent } from './angular-material/dialogs/dialogs.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -37,6 +30,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { EmployeeDetailsComponent } from './employee/components/employee-details/employee-details.component';
 import { BaseComponent } from './base.component';
+import { UserComponent } from './user/user.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularMaterialModule } from './angular-material/angular-material.module';
 
 @NgModule({
   declarations: [
@@ -55,29 +52,25 @@ import { BaseComponent } from './base.component';
     PipesComponent,
     TemplateReferenceVariableComponent,
     TwoWayBindingComponent,
-    TypographyComponent,
-    ButtonsComponent,
-    ButtonTogglesComponent,
-    IconsComponent,
-    BadgesComponent,
-    MenusComponent,
-    PanelsComponent,
-    TabsComponent,
-    StepperComponent,
+    
     InputsComponent,
-    DialogsComponent,
+  
     BootstrapComponent,
     EmployeeListComponent,
     NotFoundComponent,
     EmployeeDetailsComponent,
-    BaseComponent
+    BaseComponent,
+    UserComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule, 
+    BrowserModule,BrowserAnimationsModule,
     SharedModule, 
     NgbModule,
+    AngularMaterialModule,
     HttpClientModule // Ensure HttpClientModule is imported for HTTP requests
   ],
   providers: [],

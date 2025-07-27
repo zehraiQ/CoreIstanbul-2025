@@ -5,19 +5,12 @@ import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { EmployeeDetailsComponent } from './employee/components/employee-details/employee-details.component';
+import { UserComponent } from './user/user.component';
+
 
 const routes: Routes = [
-  {path: '', redirectTo: '/employee-list', pathMatch: 'full'},
-  {path: 'employee-list', component: EmployeeListComponent},
-  { path: 'employee-details/:id', component: EmployeeDetailsComponent },
-  {path: 'employee-details', redirectTo: '/employee-list', pathMatch: 'full'},
-  {path: 'class-binding', component: ClassBindingComponent},
-  {path: 'event-binding', component: EventBindingComponent},
-  { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) },
-  { path: 'angular-material', loadChildren: () => import('./angular-material/angular-material.module').then(m => m.AngularMaterialModule) },
-  {path: '**', component: NotFoundComponent},
+  { path: 'user/:id', component: UserComponent }
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
